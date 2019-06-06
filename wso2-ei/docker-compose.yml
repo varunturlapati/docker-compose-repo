@@ -1,0 +1,9 @@
+api-manager:
+        image: wso2/wso2ei-integrator
+        volumes:
+                 - "~/vt-wso2-ei/wso2ei-6.5.0/:/home/wso2carbon/wso2ei-6.5.0/"
+        #        - "~/default-wso2-conf/:/home/wso2carbon/wso2am-2.6.0/repository/conf/"
+        ports:
+                - "8244:8243"
+                - "9444:9443"
+                - "8281:8280"
